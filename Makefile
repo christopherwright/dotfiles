@@ -9,6 +9,9 @@ $(HOME)/.bashrc: bashrc
 $(HOME)/.bash_profile: bash_profile
 	cp $(shell pwd)/bash_profile $@
 
+$(HOME)/.gemrc: gemrc
+	cp $(shell pwd)/gemrc $@
+
 $(HOME)/.vim: vim
 	cp -R $(shell pwd)/vim $@
 
@@ -21,6 +24,7 @@ $(HOME)/.vimrc: vimrc
 install: $(HOME)/.gitconfig \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
+	$(HOME)/.gemrc \
 	$(HOME)/.vim \
 	$(HOME)/.vim/autoload/pathogen.vim \
 	$(HOME)/.vimrc
@@ -29,5 +33,6 @@ clean:
 	rm -fr $(HOME)/.gitconfig \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
+	$(HOME)/.gemrc \
 	$(HOME)/.vim \
 	$(HOME)/.vimrc
