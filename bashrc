@@ -12,3 +12,8 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 
 PS1="\u@\h:\w $ "
+
+# Aliases.
+alias da="django-admin.py"
+alias pm="python manage.py"
+alias rs="python manage.py runserver 0.0.0.0:8000"

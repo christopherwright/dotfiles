@@ -7,3 +7,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/django.vim"]
+	path = vim/bundle/django.vim
+	url = https://github.com/vim-scripts/django.vim.git
