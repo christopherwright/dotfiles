@@ -5,7 +5,7 @@ filetype plugin indent on
 set nocompatible      " Use vim defaults
 set history=50        " Keep 50 lines of command history
 set tabstop=2         " Number of space of tab character
-set shiftwidth=2      " Number of space to auto-indent
+set shiftwidth=4      " Number of space to auto-indent
 set expandtab         " Tabs are converted to spaces
 set scrolloff=3       " Minimal number of lines to keep above/below cursor
 set showcmd           " Display incomplete commands
@@ -16,12 +16,9 @@ set ignorecase        " Ignore case when searching
 set backspace=indent,eol,start " Allows backspacing over these character types
 set mouse=            " Disables console mouse-support
 
-"set autoindent        " Copy indent from current line when starting new line
+set autoindent        " Copy indent from current line when starting new line
 "set smartindent       " Attempts to indent appropiately near curly braces
 "set cindent           " Get amount of indent according to C-indenting rules
-set noautoindent
-set nosmartindent
-set nocindent
 
 "
 " Search
