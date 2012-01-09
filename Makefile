@@ -3,6 +3,9 @@ HOME=$(shell echo $$HOME)
 $(HOME)/.gitconfig: gitconfig
 	cp $(shell pwd)/gitconfig $@
 
+$(HOME)/.gitignore: gitignore
+	cp $(shell pwd)/gitignore $@
+
 $(HOME)/.bashrc: bashrc
 	cp $(shell pwd)/bashrc $@
 
@@ -22,6 +25,7 @@ $(HOME)/.vimrc: vimrc
 	cp $(shell pwd)/vimrc $@
 
 install: $(HOME)/.gitconfig \
+	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \
@@ -31,6 +35,7 @@ install: $(HOME)/.gitconfig \
 
 clean:
 	rm -fr $(HOME)/.gitconfig \
+	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \

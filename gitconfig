@@ -1,3 +1,5 @@
 [user]
   name = Christopher Wright
   email = christopherwright@gmail.com
+[core]
+  excludesfile = "~/.gitignore"
