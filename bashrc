@@ -1,3 +1,4 @@
+export PATH="$HOME/.rbenv/bin:$PATH"
 export EDITOR=$(which vim)
 alias vi=$(which vim)
 
@@ -17,3 +18,7 @@ PS1="\u@\h:\w $ "
 alias da="django-admin.py"
 alias pm="python manage.py"
 alias rs="python manage.py runserver 0.0.0.0:8000"
+alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
+
+# Rbenv shim.
+eval "$(rbenv init -)"
