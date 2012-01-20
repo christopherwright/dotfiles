@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Sourced from: https://gist.github.com/890647
+# Sourced with slight modifications from: https://gist.github.com/890647
 
 import os
 import sys
