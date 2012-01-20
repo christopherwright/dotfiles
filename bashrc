@@ -22,3 +22,11 @@ alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
 # Rbenv shim.
 eval "$(rbenv init -)"
+
+# Virtualenvwrapper.
+export WORKON_HOME=~/.virtualenvs
+VIRTUALENVWRAPPER="/usr/local/bin/virtualenvwrapper.sh"
+if [ -f $VIRTUALENVWRAPPER ]
+then
+    source $VIRTUALENVWRAPPER
+fi
