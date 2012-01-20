@@ -25,8 +25,17 @@ eval "$(rbenv init -)"
 
 # Virtualenvwrapper.
 export WORKON_HOME=~/.virtualenvs
+export VIRTUALENV_USE_DISTRIBUTE="1"
 VIRTUALENVWRAPPER="/usr/local/bin/virtualenvwrapper.sh"
 if [ -f $VIRTUALENVWRAPPER ]
 then
     source $VIRTUALENVWRAPPER
+
+    # Overriding cd is dangerous, I'd like to come up with a better solution
+    # for this.
+    function cd(){
+        builtin cd "$@"
+        $(~/.bash_tools/workon.py)
+    }
 fi
+
