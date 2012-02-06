@@ -10,3 +10,6 @@
 [submodule "vim/bundle/django.vim"]
 	path = vim/bundle/django.vim
 	url = https://github.com/vim-scripts/django.vim.git
+[submodule "vim/bundle/vim-puppet"]
+	path = vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
