@@ -39,7 +39,7 @@ then
     }
 fi
 
-# Env file, for setting config using the environment.
+# Env file, for setting configuration using environment variables.
 ENV_FILE="${HOME}/.env"
 if [ -f $ENV_FILE ]
 then
