@@ -39,3 +39,9 @@ then
     }
 fi
 
+# Env file, for setting config using the environment.
+ENV_FILE="${HOME}/.env"
+if [ -f $ENV_FILE ]
+then
+    source $ENV_FILE
+fi
