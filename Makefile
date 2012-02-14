@@ -12,9 +12,6 @@ $(HOME)/.bashrc: bashrc
 $(HOME)/.bash_profile: bash_profile
 	cp $(shell pwd)/bash_profile $@
 
-$(HOME)/.bash_tools: bash_tools
-	cp -R $(shell pwd)/bash_tools $@
-
 $(HOME)/.gemrc: gemrc
 	cp $(shell pwd)/gemrc $@
 
@@ -34,7 +31,6 @@ install: $(HOME)/.gitconfig \
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
-	$(HOME)/.bash_tools \
 	$(HOME)/.gemrc \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
@@ -46,7 +42,6 @@ clean:
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
-	$(HOME)/.bash_tools \
 	$(HOME)/.gemrc \
 	$(HOME)/.vim \
 	$(HOME)/.vimrc
