@@ -35,13 +35,6 @@ VIRTUALENVWRAPPER="/usr/local/bin/virtualenvwrapper.sh"
 if [ -f $VIRTUALENVWRAPPER ]
 then
     source $VIRTUALENVWRAPPER
-
-    # Overriding cd is dangerous, I'd like to come up with a better solution
-    # for this.
-    function cd(){
-        builtin cd "$@"
-        $(~/.bash_tools/workon.py)
-    }
 fi
 
 # Env file, for setting configuration using environment variables.
@@ -49,4 +42,11 @@ ENV_FILE="${HOME}/.env"
 if [ -f $ENV_FILE ]
 then
     source $ENV_FILE
+fi
+
+# Autoenv, see https://github.com/kennethreitz/autoenv
+AUTOENV_FILE="${HOME}/.autoenv/activate.sh"
+if [ -f $AUTOENV_FILE ]
+then
+    source $AUTOENV_FILE
 fi
