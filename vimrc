@@ -8,6 +8,7 @@ set tabstop=2         " Number of space of tab character
 set shiftwidth=4      " Number of space to auto-indent
 set expandtab         " Tabs are converted to spaces
 set scrolloff=3       " Minimal number of lines to keep above/below cursor
+set number            " Turn on line numbers
 set showcmd           " Display incomplete commands
 set vb                " Turn off loud beep
 set noerrorbells
