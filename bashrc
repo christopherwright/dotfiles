@@ -1,4 +1,8 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
+RBENV_BIN_PATH="${HOME}/.rbenv/bin"
+if [ -d $RBENV_BIN_PATH ]
+then
+    export PATH="$RBENV_BIN_PATH:$PATH"
+fi
 export EDITOR=$(which vim)
 alias vi=$(which vim)
 
@@ -26,7 +30,10 @@ alias rs="python manage.py runserver 0.0.0.0:8000"
 alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
 # Rbenv shim.
-eval "$(rbenv init -)"
+hash rbenv &> /dev/null
+if [ $? -eq 1 ]; then
+    eval "$(rbenv init -)"
+fi
 
 # Virtualenvwrapper.
 export WORKON_HOME=~/.virtualenvs
