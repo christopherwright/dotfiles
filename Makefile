@@ -1,5 +1,8 @@
 HOME=$(shell echo $$HOME)
 
+$(HOME)/.git-completion.bash: git-completion.bash
+	cp $(shell pwd)/git-completion.bash $@
+
 $(HOME)/.gitconfig: gitconfig
 	cp $(shell pwd)/gitconfig $@
 
@@ -27,7 +30,8 @@ $(HOME)/.vim/autoload/pathogen.vim: vim-pathogen/autoload/pathogen.vim
 $(HOME)/.vimrc: vimrc
 	cp $(shell pwd)/vimrc $@
 
-install: $(HOME)/.gitconfig \
+install: $(HOME)/.git-completion.bash \
+	$(HOME)/.gitconfig \
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
@@ -38,7 +42,8 @@ install: $(HOME)/.gitconfig \
 	$(HOME)/.vimrc
 
 clean:
-	rm -fr $(HOME)/.gitconfig \
+	rm -fr $(HOME)/.git-completion.bash \
+  $(HOME)/.gitconfig \
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \

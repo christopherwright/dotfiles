@@ -12,7 +12,19 @@ export HISTCONTROL=ignoredups
 # Ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 
-PS1="\u@\h:\w $ "
+export GIT_PS1_SHOWUNTRACKEDFILES=
+export GIT_PS1_SHOWUPSTREAM=
+
+GIT_COMPLETION="${HOME}/.git-completion.bash"
+echo $GIT_COMPLETION
+if [ -f $GIT_COMPLETION ]
+then
+    source $GIT_COMPLETION
+fi
+
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\nλ '
+
+#PS1="\u@\h:\w $ "
 
 # ls aliases.
 alias ll='ls -alFh'
