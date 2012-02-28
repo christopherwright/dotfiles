@@ -29,8 +29,6 @@ fi
 
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\nλ '
 
-#PS1="\u@\h:\w $ "
-
 # ls aliases.
 alias ll='ls -alFh'
 alias la='ls -A'
