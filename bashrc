@@ -16,9 +16,6 @@ export HISTCONTROL=ignoredups
 # Ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 
-export GIT_PS1_SHOWUNTRACKEDFILES=
-export GIT_PS1_SHOWUPSTREAM=
-
 GIT_COMPLETION="${HOME}/.git-completion.bash"
 echo $GIT_COMPLETION
 if [ -f $GIT_COMPLETION ]
