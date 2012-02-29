@@ -7,3 +7,7 @@ dist/
 .workon
 .private.yml
 .env
+.env.development
+.env.sandbox
+.env.test
+.env.production
