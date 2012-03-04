@@ -40,10 +40,7 @@ alias rs="python manage.py runserver 0.0.0.0:8000"
 alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
 # Rbenv shim.
-hash rbenv &> /dev/null
-if [ $? -eq 1 ]; then
-    eval "$(rbenv init -)"
-fi
+type -P rbenv &>/dev/null && eval "$(rbenv init -)"
 
 # Virtualenvwrapper.
 export WORKON_HOME=~/.virtualenvs
