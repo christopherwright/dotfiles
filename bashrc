@@ -21,7 +21,6 @@ export GIT_PS1_SHOWUNTRACKEDFILES=yes
 export GIT_PS1_SHOWUPSTREAM=verbose
 
 GIT_COMPLETION="${HOME}/.git-completion.bash"
-echo $GIT_COMPLETION
 if [ -f $GIT_COMPLETION ]
 then
     source $GIT_COMPLETION
