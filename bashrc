@@ -39,6 +39,9 @@ alias pm="python manage.py"
 alias rs="python manage.py runserver 0.0.0.0:8000"
 alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
+# Ruby aliases.
+alias be="bundle exec"
+
 # Rbenv shim.
 type -P rbenv &>/dev/null && eval "$(rbenv init -)"
 
