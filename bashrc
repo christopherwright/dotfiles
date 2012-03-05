@@ -68,3 +68,6 @@ if [ -f $AUTOENV_FILE ]
 then
     source $AUTOENV_FILE
 fi
+
+# Colourful grep.
+export GREP_OPTIONS='--color=auto'
