@@ -21,7 +21,6 @@ export GIT_PS1_SHOWUNTRACKEDFILES=yes
 export GIT_PS1_SHOWUPSTREAM=verbose
 
 GIT_COMPLETION="${HOME}/.git-completion.bash"
-echo $GIT_COMPLETION
 if [ -f $GIT_COMPLETION ]
 then
     source $GIT_COMPLETION
@@ -40,11 +39,11 @@ alias pm="python manage.py"
 alias rs="python manage.py runserver 0.0.0.0:8000"
 alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
+# Ruby aliases.
+alias be="bundle exec"
+
 # Rbenv shim.
-hash rbenv &> /dev/null
-if [ $? -eq 1 ]; then
-    eval "$(rbenv init -)"
-fi
+type -P rbenv &>/dev/null && eval "$(rbenv init -)"
 
 # Virtualenvwrapper.
 export WORKON_HOME=~/.virtualenvs
