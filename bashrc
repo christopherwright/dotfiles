@@ -70,3 +70,6 @@ fi
 
 # Colourful grep.
 export GREP_OPTIONS='--color=auto'
+
+# Colourful nosetests.
+export NOSE_REDNOSE=1
