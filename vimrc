@@ -1,12 +1,15 @@
+filetype off
 call pathogen#infect()
+call pathogen#helptags()
+set nocompatible
 syntax on
 filetype plugin indent on
 
+syn sync minlines=200
+syn sync fromstart
+
 set nocompatible      " Use vim defaults
 set history=50        " Keep 50 lines of command history
-set tabstop=2         " Number of space of tab character
-set shiftwidth=4      " Number of space to auto-indent
-set expandtab         " Tabs are converted to spaces
 set scrolloff=3       " Minimal number of lines to keep above/below cursor
 set number            " Turn on line numbers
 set showcmd           " Display incomplete commands
@@ -17,9 +20,18 @@ set ignorecase        " Ignore case when searching
 set backspace=indent,eol,start " Allows backspacing over these character types
 set mouse=            " Disables console mouse-support
 
-set autoindent        " Copy indent from current line when starting new line
-"set smartindent       " Attempts to indent appropiately near curly braces
-"set cindent           " Get amount of indent according to C-indenting rules
+
+"
+" Tabs, spaces and wrapping 
+"
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set wrap
+set textwidth=80
+set formatoptions=qrn1
+
 
 "
 " Search
@@ -29,6 +41,16 @@ set hlsearch          " Highlight searches
 " Press space to turn off highlighting and clear any message already
 " displayed
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+
+"
+" Backups 
+"
+set undodir=~/.vim/tmp/undo//     " undo files
+set backupdir=~/.vim/tmp/backup// " backups
+set directory=~/.vim/tmp/swap//   " swap files
+set backup                        " enable backups
+
 
 "
 " Syntax highlighting / color scheme
@@ -51,6 +73,21 @@ syntax on
 set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized
+
+
+"
+" File types
+"
+augroup myfiletypes
+  autocmd!
+  " autoindent with two spaces, always expand tabs
+  autocmd FileType ruby,eruby,yaml,cucumber set ai sw=2 sts=2 et
+  autocmd FileType coffee set ai sw=2 sts=2 et
+  autocmd FileType xml set ai ts=8 sw=8 sts=8
+  autocmd FileType xslt set ai ts=2 sw=2
+  autocmd FileType vim set ai ts=2 sw=2
+augroup END
+
 
 "
 " Status line
@@ -105,6 +142,7 @@ else
   set autoindent    " always set autoindenting on
 
 endif
+
 
 "
 " Remap / Custom key combos
