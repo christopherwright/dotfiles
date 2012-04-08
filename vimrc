@@ -83,6 +83,7 @@ augroup myfiletypes
   " autoindent with two spaces, always expand tabs
   autocmd FileType ruby,eruby,yaml,cucumber set ai sw=2 sts=2 et
   autocmd FileType coffee set ai sw=2 sts=2 et
+  autocmd FileType javascript set ai sw=2 sts=2 et
   autocmd FileType xml set ai ts=8 sw=8 sts=8
   autocmd FileType xslt set ai ts=2 sw=2
   autocmd FileType vim set ai ts=2 sw=2
