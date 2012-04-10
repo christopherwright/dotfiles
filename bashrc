@@ -33,6 +33,9 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 
+# Git aliases.
+alias g="git"
+
 # Django aliases.
 alias da="django-admin.py"
 alias pm="python manage.py"
