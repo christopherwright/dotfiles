@@ -70,7 +70,7 @@ if &term =~ "xterm"
 endif
 
 syntax on
-set background=light
+set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized
 
