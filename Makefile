@@ -39,11 +39,15 @@ install: $(HOME)/.git-completion.bash \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
 	$(HOME)/.vim/autoload/pathogen.vim \
-	$(HOME)/.vimrc
+	$(HOME)/.vimrc \
+	command-t
+
+command-t:
+	rbenv local system && cd ~/.vim/bundle/command-t/ruby/command-t && ruby ./extconf.rb && make
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
-  $(HOME)/.gitconfig \
+    $(HOME)/.gitconfig \
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
