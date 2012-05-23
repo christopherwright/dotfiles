@@ -158,3 +158,7 @@ nmap <leader>x :q!<cr>          " Fast quit (no save)
 
 nnoremap <silent> <C-n> :tabnext<CR>
 nnoremap <silent> <C-p> :tabprevious<CR>
+
+" Command-T opens selection in new tab by default.
+let g:CommandTAcceptSelectionMap = "<C-t>"
+let g:CommandTAcceptSelectionTabMap = "<CR>"
