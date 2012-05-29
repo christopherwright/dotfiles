@@ -55,23 +55,8 @@ set backup                        " enable backups
 "
 " Syntax highlighting / color scheme
 " 
-if &term =~ "xterm"
-  "256 color --
-  let &t_Co=256
-  " Restore screen after quitting
-  set t_ti=ESC7ESC[rESC[?47h t_te=ESC[?47lESC8
-  if has("terminfo")
-    let &t_Sf="\ESC[3%p1%dm"
-    let &t_Sb="\ESC[4%p1%dm"
-  else
-    let &t_Sf="\ESC[3%dm"
-    let &t_Sb="\ESC[4%dm"
-  endif
-endif
-
-syntax on
+syntax enable
 set background=dark
-let g:solarized_termcolors=16
 colorscheme solarized
 
 
