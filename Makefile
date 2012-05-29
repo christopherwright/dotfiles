@@ -18,6 +18,9 @@ $(HOME)/.bash_profile: bash_profile
 $(HOME)/.gemrc: gemrc
 	cp $(shell pwd)/gemrc $@
 
+$(HOME)/.tmux.conf: tmux.conf
+	cp $(shell pwd)/tmux.conf $@
+
 $(HOME)/.virtualenvs:
 	mkdir -p $@
 
@@ -36,6 +39,7 @@ install: $(HOME)/.git-completion.bash \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \
+	$(HOME)/.tmux.conf \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
 	$(HOME)/.vim/autoload/pathogen.vim \
@@ -52,6 +56,7 @@ clean:
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \
+	$(HOME)/.tmux.conf \
 	$(HOME)/.vim \
 	$(HOME)/.vimrc
 
