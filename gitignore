@@ -11,3 +11,4 @@ dist/
 .env.sandbox
 .env.test
 .env.production
+.sass-cache/
