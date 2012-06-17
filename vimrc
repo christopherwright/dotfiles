@@ -56,8 +56,7 @@ set backup                        " enable backups
 " Syntax highlighting / color scheme
 " 
 syntax enable
-set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night-Eighties
 
 
 "
