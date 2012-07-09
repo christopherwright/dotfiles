@@ -3,8 +3,16 @@ if [ -d $RBENV_BIN_PATH ]
 then
     export PATH="$RBENV_BIN_PATH:$PATH"
 fi
-export EDITOR=$(which vim)
-alias vi=$(which vim)
+
+if command -v mvim &>/dev/null
+then
+    export EDITOR="mvim -v"
+else
+    export EDITOR=$(which vim)
+fi
+
+alias vi=$EDITOR
+alias vim=$EDITOR
 
 set -o vi
 
