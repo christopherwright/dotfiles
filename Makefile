@@ -18,6 +18,9 @@ $(HOME)/.bash_profile: bash_profile
 $(HOME)/.gemrc: gemrc
 	cp $(shell pwd)/gemrc $@
 
+$(HOME)/.rspec: rspec
+	cp $(shell pwd)/rspec $@
+
 $(HOME)/.tmux.conf: tmux.conf
 	cp $(shell pwd)/tmux.conf $@
 
@@ -39,6 +42,7 @@ install: $(HOME)/.git-completion.bash \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \
+	$(HOME)/.rspec \
 	$(HOME)/.tmux.conf \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
@@ -56,6 +60,7 @@ clean:
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.gemrc \
+	$(HOME)/.rspec \
 	$(HOME)/.tmux.conf \
 	$(HOME)/.vim \
 	$(HOME)/.vimrc
