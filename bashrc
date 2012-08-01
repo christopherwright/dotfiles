@@ -1,3 +1,9 @@
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/sbin:$PATH
+export PATH=/opt/local/bin:$PATH
+export PATH=/opt/bin:$PATH
+
 RBENV_BIN_PATH="${HOME}/.rbenv/bin"
 if [ -d $RBENV_BIN_PATH ]
 then
