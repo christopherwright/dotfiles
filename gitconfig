@@ -5,6 +5,7 @@
   excludesfile = "~/.gitignore"
 [diff]
   renames = copies
+  tool = Kaleidoscope
 [color]
   branch = auto
   diff = auto
@@ -45,3 +46,7 @@
   publish = !git push origin $(git current-branch) && echo $(git track)
 [push]
     default = tracking
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
