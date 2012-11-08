@@ -146,3 +146,6 @@ nnoremap <silent> <C-p> :tabprevious<CR>
 " Command-T opens selection in new tab by default.
 let g:CommandTAcceptSelectionMap = "<C-t>"
 let g:CommandTAcceptSelectionTabMap = "<CR>"
+
+nmap <leader>1 :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in new tab
+nmap <leader>2 :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in vsp
