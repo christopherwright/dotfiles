@@ -25,6 +25,8 @@ set -o vi
 export HISTCONTROL=ignoredups
 # Ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
+# Increase histsize from default (500).
+export HISTSIZE=20000
 
 export GIT_PS1_SHOWSTASHSTATE=yes
 export GIT_PS1_SHOWUNTRACKEDFILES=yes
