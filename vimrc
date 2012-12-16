@@ -73,6 +73,11 @@ augroup myfiletypes
   autocmd FileType vim set ai ts=2 sw=2
 augroup END
 
+"
+" Disable automatic commenting in c/cpp files
+"
+au FileType c,cpp setlocal comments-=:// comments+=f://
+
 
 "
 " Status line
