@@ -56,7 +56,8 @@ set backup                        " enable backups
 " Syntax highlighting / color scheme
 " 
 syntax enable
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme base16-default
 
 
 "
