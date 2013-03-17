@@ -46,3 +46,6 @@
 [submodule "vim/bundle/mustache.vim"]
 	path = vim/bundle/mustache.vim
 	url = git://github.com/juvenn/mustache.vim.git
+[submodule "vim/bundle/Processing"]
+	path = vim/bundle/Processing
+	url = git@github.com:vim-scripts/Processing.git
