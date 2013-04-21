@@ -57,7 +57,7 @@ set backup                        " enable backups
 " 
 syntax enable
 set background=dark
-colorscheme base16-default
+colorscheme Tomorrow-Night-Bright
 
 
 "
