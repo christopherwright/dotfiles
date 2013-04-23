@@ -56,6 +56,7 @@ alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
 
 # Ruby aliases.
 alias be="bundle exec"
+alias rt="bundle exec rake test"
 
 # Rbenv shim.
 type -P rbenv &>/dev/null && eval "$(rbenv init -)"
