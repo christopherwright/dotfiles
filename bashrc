@@ -48,11 +48,9 @@ alias l='ls -CF'
 # Git aliases.
 alias g="git"
 
-# Django aliases.
-alias da="django-admin.py"
-alias pm="python manage.py"
-alias rs="python manage.py runserver 0.0.0.0:8000"
-alias rsd="python manage.py runserver 0.0.0.0:8000 --settings=development"
+# Data pipeline aliases.
+alias dpl="datapipeline --list-pipelines"
+alias dpr="datapipeline --list-runs"
 
 # Ruby aliases.
 alias be="bundle exec"
