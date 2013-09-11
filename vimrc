@@ -80,6 +80,10 @@ augroup END
 "
 au FileType c,cpp setlocal comments-=:// comments+=f://
 
+"
+" Custom filetype extensions
+"
+au BufNewFile,BufRead *.ruby set filetype=ruby
 
 "
 " Status line
