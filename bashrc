@@ -51,6 +51,7 @@ alias g="git"
 # Data pipeline aliases.
 alias dpl="datapipeline --list-pipelines"
 alias dpr="datapipeline --list-runs"
+alias dpd="datapipeline --delete"
 
 # Ruby aliases.
 alias be="bundle exec"
