@@ -49,9 +49,12 @@ alias l='ls -CF'
 alias g="git"
 
 # Data pipeline aliases.
-alias dpl="datapipeline --list-pipelines"
-alias dpr="datapipeline --list-runs"
-alias dpd="datapipeline --delete"
+datapipeline-cli/datapipeline
+
+DATAPIPELINE_PATH="datapipeline-cli/datapipeline"
+alias dpl="${DATAPIPELINE_PATH} --list-pipelines"
+alias dpr="${DATAPIPELINE_PATH} --list-runs"
+alias dpd="${DATAPIPELINE_PATH} --delete"
 
 # Ruby aliases.
 alias be="bundle exec"
