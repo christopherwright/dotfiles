@@ -168,5 +168,8 @@ nnoremap <silent> <C-p> :tabprevious<CR>
 let g:CommandTAcceptSelectionMap = "<C-t>"
 let g:CommandTAcceptSelectionTabMap = "<CR>"
 
+" Command-t ignores some directories.
+set wildignore=node_modules/**,public/assets/**,tmp/**,vendor/**
+
 nmap <leader>1 :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in new tab
 nmap <leader>2 :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in vsp
