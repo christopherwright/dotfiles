@@ -14,6 +14,7 @@
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   clg = log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+  cslg = log --pretty=format:"%C(red)%h%C(blue)%x09%an%x09%C(green)%ad%x09%C(reset)%s" --date=short
   slg = log --name-status --pretty=oneline
   flg = log --graph --pretty=format:'%Cblue%h%d%Creset %ar %Cgreen%an%Creset %s'
   f = fetch -v
