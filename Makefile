@@ -51,7 +51,7 @@ install: $(HOME)/.git-completion.bash \
 	command-t
 
 command-t:
-	cd ~/.vim/bundle/command-t/ruby/command-t && ruby ./extconf.rb && make
+	cd ~/.vim/bundle/command-t/ruby/command-t && /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby ./extconf.rb && make
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
