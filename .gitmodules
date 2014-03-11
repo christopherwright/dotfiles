@@ -49,3 +49,6 @@
 [submodule "vim/bundle/Processing"]
 	path = vim/bundle/Processing
 	url = git@github.com:vim-scripts/Processing.git
+[submodule "vim/bundle/vim-github-colorscheme"]
+	path = vim/bundle/vim-github-colorscheme
+	url = https://github.com/endel/vim-github-colorscheme
