@@ -89,3 +89,5 @@ export GREP_OPTIONS='--color=auto'
 
 # Colourful nosetests, see http://pypi.python.org/pypi/rednose/0.1.4.
 export NOSE_REDNOSE=1
+
+type -P direnv &>/dev/null && eval "$(direnv hook bash)"
