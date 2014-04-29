@@ -56,7 +56,7 @@ alias dpd="${DATAPIPELINE_PATH} --delete"
 
 # Ruby aliases.
 alias be="bundle exec"
-alias rt="bundle exec rake test"
+alias rt="bundle exec ruby -I test"
 
 # Rbenv shim.
 type -P rbenv &>/dev/null && eval "$(rbenv init -)"
