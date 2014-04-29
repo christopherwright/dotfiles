@@ -55,7 +55,7 @@ alias dpr="${DATAPIPELINE_PATH} --list-runs"
 alias dpd="${DATAPIPELINE_PATH} --delete"
 
 # Ruby aliases.
-alias be="bundle exec"
+alias b="bundle exec"
 alias rt="bundle exec ruby -I test"
 
 # Rbenv shim.
