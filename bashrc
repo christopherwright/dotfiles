@@ -1,4 +1,4 @@
-export PATH=/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 RBENV_BIN_PATH="${HOME}/.rbenv/bin"
 if [ -d $RBENV_BIN_PATH ]
