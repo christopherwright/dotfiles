@@ -165,11 +165,13 @@ nmap <leader>x :q!<cr>          " Fast quit (no save)
 nnoremap <silent> <C-n> :tabnext<CR>
 nnoremap <silent> <C-p> :tabprevious<CR>
 
-" Command-T opens selection in new tab by default.
-let g:CommandTAcceptSelectionMap = "<C-t>"
-let g:CommandTAcceptSelectionTabMap = "<CR>"
+" CtrlP
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_open_new_file = 't'
+let g:ctrlp_open_multi = 't'
 
-" Command-t ignores some directories.
+" Ignores some directories.
 set wildignore=node_modules/**,public/assets/**,tmp/**,vendor/**
 
 nmap <leader>1 :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in new tab

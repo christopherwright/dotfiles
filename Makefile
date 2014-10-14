@@ -47,11 +47,7 @@ install: $(HOME)/.git-completion.bash \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
 	$(HOME)/.vim/autoload/pathogen.vim \
-	$(HOME)/.vimrc \
-	command-t
-
-command-t:
-	cd ~/.vim/bundle/command-t/ruby/command-t && /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby ./extconf.rb && make
+	$(HOME)/.vimrc
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
