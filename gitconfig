@@ -12,41 +12,32 @@
   status = true
   ui = true
 [alias]
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-  clg = log --pretty=format:"%h%x09%an%x09%ad%x09%s"
-  cslg = log --pretty=format:"%C(red)%h%C(blue)%x09%an%x09%C(green)%ad%x09%C(reset)%s" --date=short
-  slg = log --name-status --pretty=oneline
-  flg = log --graph --pretty=format:'%Cblue%h%d%Creset %ar %Cgreen%an%Creset %s'
-  f = fetch -v
+  plainlog = log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+  fileslog = log --name-status --pretty=oneline
+  l = log --graph --pretty=format:'%Cblue%h%d%Creset %ar %Cgreen%an%Creset %s'
+  ls = ls-files
+  f = fetch
   ff = merge --ff-only
   co = checkout
   s = status
   st = stash
-  c = commit
+  c = commit -v
   d = diff
   a = add
   b = branch
-  l = log
   m = merge
   p = push
   rb = rebase
   r = reset
   sh = show
   t = tag
-  w = whatchanged -p
   cp = cherry-pick
   ch = cherry
-  bp = buildpackage
   gh = !sh -c 'git clone git://github.com/$1/$2.git' -
-  up = pull --rebase
-  reopen = !sh -c 'mvim -p $(git d --name-only HEAD~1..HEAD)' -
   dn = diff --name-only
-  unadd = reset -p
-  current-branch = !git branch | grep '^*' | sed s/\\*\\ //
-  track = !git branch --set-upstream $(git current-branch) origin/$(git current-branch)
-  publish = !git push origin $(git current-branch) && echo $(git track)
+  ss = !sh -c 'git status -s | cut -c4-'
 [push]
-    default = tracking
+    default = current
 [difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
