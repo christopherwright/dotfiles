@@ -51,3 +51,5 @@
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
+[credential]
+	helper = osxkeychain
