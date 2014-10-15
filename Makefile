@@ -51,11 +51,11 @@ install: $(HOME)/.git-completion.bash \
 	command-t
 
 command-t:
-	cd ~/.vim/bundle/Command-T && rbenv local 1.8.7-p358 && rbenv rehash && bundle install && bundle exec rake make
+	cd ~/.vim/bundle/Command-T/ruby/command-t && rbenv local 1.8.7-p358 && ruby ./extconf.rb && make
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
-    $(HOME)/.gitconfig \
+	$(HOME)/.gitconfig \
 	$(HOME)/.gitignore \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
