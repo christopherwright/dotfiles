@@ -154,7 +154,7 @@ nnoremap <C-H> <C-W><C-H>
 "
 " Remap / Custom key combos
 "
-" With a map leader it's possible to do extra key combinations
+" With a map leader it's possible to do extra key combinations.
 let mapleader = ","
 let g:mapleader = ","
 
@@ -165,14 +165,12 @@ nmap <leader>x :q!<cr>          " Fast quit (no save)
 nnoremap <silent> <C-n> :tabnext<CR>
 nnoremap <silent> <C-p> :tabprevious<CR>
 
-" CtrlP
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_open_new_file = 't'
-let g:ctrlp_open_multi = 't'
+" Command-T opens selection in new tab.
+let g:CommandTAcceptSelectionMap = "<C-t>"
+let g:CommandTAcceptSelectionTabMap = "<CR>"
 
 " Ignores some directories.
-set wildignore=node_modules/**,public/assets/**,tmp/**,vendor/**
+set wildignore=node_modules/**,public/assets/**,tmp/**,vendor/**,app/assets/**
 
 nmap <leader>1 :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in new tab
 nmap <leader>2 :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in vsp

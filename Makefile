@@ -47,7 +47,11 @@ install: $(HOME)/.git-completion.bash \
 	$(HOME)/.virtualenvs \
 	$(HOME)/.vim \
 	$(HOME)/.vim/autoload/pathogen.vim \
-	$(HOME)/.vimrc
+	$(HOME)/.vimrc \
+	command-t
+
+command-t:
+	cd ~/.vim/bundle/Command-T && rbenv local 1.8.7-p358 && rbenv rehash && bundle install && bundle exec rake make
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
