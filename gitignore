@@ -12,3 +12,4 @@ dist/
 .env.test
 .env.production
 .sass-cache/
+.agignore
