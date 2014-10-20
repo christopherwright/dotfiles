@@ -26,6 +26,7 @@
   a = add
   b = branch
   m = merge
+  p = push
   rb = rebase
   r = reset
   sh = show
