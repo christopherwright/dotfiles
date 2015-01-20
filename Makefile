@@ -51,7 +51,7 @@ install: $(HOME)/.git-completion.bash \
 	command-t
 
 command-t:
-	cd ~/.vim/bundle/Command-T/ruby/command-t && rbenv local 1.8.7-p358 && ruby ./extconf.rb && make
+	cd ~/.vim/bundle/Command-T/ruby/command-t && rbenv local system && ruby ./extconf.rb && make
 
 clean:
 	rm -fr $(HOME)/.git-completion.bash \
