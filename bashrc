@@ -1,4 +1,4 @@
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:~/Library/Android/sdk/platform-tools:$PATH
 
 RBENV_BIN_PATH="${HOME}/.rbenv/bin"
 if [ -d $RBENV_BIN_PATH ]
