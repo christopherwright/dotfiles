@@ -69,6 +69,7 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml,cucumber set ai sw=2 sts=2 et
   autocmd FileType html,css,less set ai sw=2 sts=2 et
   autocmd FileType coffee set ai sw=2 sts=2 et
+  autocmd FileType java set ai sw=2 sts=2 et
   autocmd FileType javascript set ai sw=2 sts=2 et
   autocmd FileType sh set ai sw=2 sts=2 et
   autocmd FileType xml set ai ts=8 sw=8 sts=8
