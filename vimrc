@@ -86,6 +86,7 @@ au FileType c,cpp setlocal comments-=:// comments+=f://
 " Custom filetype extensions
 "
 au BufNewFile,BufRead *.ruby set filetype=ruby
+au BufNewFile,BufRead *.es6 set filetype=javascript
 
 "
 " Status line
