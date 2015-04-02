@@ -72,7 +72,7 @@ augroup myfiletypes
   autocmd FileType java set ai sw=2 sts=2 et
   autocmd FileType javascript set ai sw=2 sts=2 et
   autocmd FileType sh set ai sw=2 sts=2 et
-  autocmd FileType xml set ai ts=8 sw=8 sts=8
+  autocmd FileType xml set ai ts=2 sw=2 sts=2 et
   autocmd FileType xslt set ai ts=2 sw=2
   autocmd FileType vim set ai ts=2 sw=2
 augroup END
