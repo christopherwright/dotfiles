@@ -61,6 +61,9 @@ alias rt="bundle exec ruby -I test"
 # Rbenv shim.
 type -P rbenv &>/dev/null && eval "$(rbenv init -)"
 
+# Tmux
+alias tmn="tmux new-session -s dev"
+
 # Virtualenvwrapper.
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENV_USE_DISTRIBUTE="1"
