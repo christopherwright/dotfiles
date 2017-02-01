@@ -176,3 +176,9 @@ set wildignore=node_modules/**,public/assets/**,tmp/**,vendor/**,app/assets/audi
 
 nmap <leader>1 :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in new tab
 nmap <leader>2 :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " Ctag in vsp
+
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+end

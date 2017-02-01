@@ -1,10 +1,4 @@
-export PATH=$HOME/Library/Haskell/bin:/usr/local/opt/go/libexec/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:${HOME}/Library/Android/sdk/platform-tools:${HOME}/Library/Android/sdk/tools:$PATH
-
-RBENV_BIN_PATH="${HOME}/.rbenv/bin"
-if [ -d $RBENV_BIN_PATH ]
-then
-    export PATH="$RBENV_BIN_PATH:$PATH"
-fi
+export PATH=/usr/local/opt/rbenv:$HOME/Library/Haskell/bin:/usr/local/opt/go/libexec/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:${HOME}/Library/Android/sdk/platform-tools:${HOME}/Library/Android/sdk/tools:$PATH
 
 if command -v mvim &>/dev/null
 then
@@ -96,4 +90,8 @@ export NOSE_REDNOSE=1
 # Spring, nope
 export DISABLE_SPRING=1
 
+alias ag="ag --path-to-agignore ~/.agignore"
+
 type -P direnv &>/dev/null && eval "$(direnv hook bash)"
+
+if [ -e ~/.ksr.rc ]; then source ~/.ksr.rc; fi # Provisioned by ksr laptop script
