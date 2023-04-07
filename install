@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+sudo rm -rf ~/.config > /dev/null 2>&1
+sudo rm -rf ~/.vim > /dev/null 2>&1
+sudo rm -rf ~/.vimrc > /dev/null 2>&1
+sudo rm -rf ~/.zshrc > /dev/null 2>&1
+
+ln -sf "$PWD/.config" ~/.config
+ln -sf "$PWD/.vim" ~/.vim
+ln -sf "$PWD/.vimrc" ~/.vimrc
+ln -sf "$PWD/.zshrc" ~/.zshrc
